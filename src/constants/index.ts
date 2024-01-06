@@ -19,20 +19,65 @@ export const techStack = [
 export const posts = [
     {
       id: 1,
-      title: 'Boost your conversion rate',
+      title: 'Freelancing Website With NextJs 14',
       href: '#',
       description:
-        'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-      date: 'Mar 16, 2020',
-      datetime: '2020-03-16',
-      category: { title: 'Marketing', href: '#' },
-      author: {
-        name: 'Michael Foster',
-        role: 'Co-Founder / CTO',
-        href: '#',
-        imageUrl:
-          'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-      },
+        'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',   
     },
-    // More posts...
+    {
+        id: 2,
+        title: 'Ecommerce Website With PHP & MySQL',
+        href: '#',
+        description:
+          'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',   
+      },
+      {
+        id: 3,
+        title: 'Daraz Clone Application',
+        href: '#',
+        description:
+          'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',   
+      },
+      {
+        id: 4,
+        title: 'Weather Application With Javascript',
+        href: '#',
+        description:
+          'Api Handling, Api Handling, Api Handling, Api Handling, Api Handling, Api Handling, Api Handling, Api Handling, Api Handling, Api Handling, Api Handling, Api Handling, Api Handling, ',   
+      },
+  ]
+
+  //contact page
+  import email from '@/assets/email.svg'
+  import github from '@/assets/github.svg'
+  import linkedin from '@/assets/linkedin1.svg'
+
+  export const socialLinks = [
+    {
+      id: '1',
+      name: 'Email',
+      p: 'email@email.com',
+      src: email,
+    },
+    {
+      id: '2',
+      name: 'Linkedin',
+      links: 'https://www.linkedin.com/in/bibekgurung9/',
+      p: 'https://www.linkedin.com/in/bibekgurung9/',
+      src: linkedin,
+    },
+    {
+      id: '3',
+      name: 'Github',
+      links: 'https://www.linkedin.com/in/bibekgurung9/',
+      p: 'https://www.linkedin.com/in/bibekgurung9/',     
+      src: github,
+    },
+    {
+      id: '4',
+      name: 'Twitter',
+      links: 'email@email.com',
+      p: 'sasaa',
+      src: linkedin,
+    },
   ]
