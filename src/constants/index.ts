@@ -1,3 +1,13 @@
+//navigation
+import download from '@/assets/download.svg'
+export const navigation = [
+  { name: 'Home', href: '#' },
+  { name: 'Portfolio', href: '#portfolio' },
+  { name: 'About Me', href: '#about-me' },
+  { name: 'Contact Me', href: '#contact-me' },
+  { name: 'CV', src: download, href: download , download: 'BibekGurung_Resume.pdf'},
+]
+
 //images for tech stack
 import html from '@/assets/html.svg'
 import css from '@/assets/css.svg'

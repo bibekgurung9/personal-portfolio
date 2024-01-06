@@ -1,15 +1,8 @@
 import React, { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-
-const navigation = [
-  { name: 'Home', href: '#' },
-  { name: 'Portfolio', href: '#portfolio' },
-  { name: 'About Me', href: '#' },
-  { name: 'Contact Me', href: '#' },
-  { name: 'CV', href: '#' },
-]
-
+import { navigation } from '@/constants'
+import Image from 'next/image'
 
 const NavBar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -18,12 +11,7 @@ const NavBar = () => {
     <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
       <div className="flex lg:flex-1">
         <a href="#" className="-m-1.5 p-1.5">
-          <span className="sr-only">Your Company</span>
-          <img
-            className="h-8 w-auto"
-            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-            alt=""
-          />
+          <h1 className='font-bold text-2xl'>Bibek Gurung</h1>
         </a>
       </div>
       <div className="flex lg:hidden">
@@ -38,7 +26,7 @@ const NavBar = () => {
       </div>
       <div className="hidden lg:flex lg:gap-x-12">
         {navigation.map((item) => (
-          <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
+          <a key={item.name} href={item.href} className="text-xl font-semibold leading-6 text-gray-900 hover:bg-purple-200 hover:shadow-indigo-500/50 p-2 hover:rounded">
             {item.name}
           </a>
         ))}
@@ -49,12 +37,7 @@ const NavBar = () => {
       <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
         <div className="flex items-center justify-between">
           <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
-            <img
-              className="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-              alt=""
-            />
+          <h1 className='font-bold text-1xl'>Bibek Gurung</h1>
           </a>
           <button
             type="button"
@@ -72,9 +55,10 @@ const NavBar = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 "
+                  download={item.download}
                 >
-                  {item.name}
+                  <span className='flex items-center'>{item.name}<Image src={item.src} alt={''} width={35} className='ml-2 '/></span> 
                 </a>
               ))}
             </div>
