@@ -31,6 +31,7 @@ export const posts = [
       id: 1,
       title: 'Freelancing Website With NextJs 14',
       href: '#',
+      name: 'NextJS Ecommerce',
       description:
         'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',   
     },
@@ -38,6 +39,7 @@ export const posts = [
         id: 2,
         title: 'Ecommerce Website With PHP & MySQL',
         href: '#',
+        name: 'PHP Ecommerce',
         description:
           'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',   
       },
@@ -45,6 +47,7 @@ export const posts = [
         id: 3,
         title: 'Daraz Clone Application',
         href: '#',
+        name: 'Daraz CLone',
         description:
           'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',   
       },
@@ -52,6 +55,7 @@ export const posts = [
         id: 4,
         title: 'Weather Application With Javascript',
         href: '#',
+        name: 'Weather Application',
         description:
           'Api Handling, Api Handling, Api Handling, Api Handling, Api Handling, Api Handling, Api Handling, Api Handling, Api Handling, Api Handling, Api Handling, Api Handling, Api Handling, ',   
       },
@@ -63,12 +67,6 @@ export const posts = [
   import linkedin from '@/assets/linkedin1.svg'
 
   export const socialLinks = [
-    {
-      id: '1',
-      name: 'Email',
-      p: 'email@email.com',
-      src: email,
-    },
     {
       id: '2',
       name: 'Linkedin',
@@ -83,11 +81,11 @@ export const posts = [
       p: 'https://www.linkedin.com/in/bibekgurung9/',     
       src: github,
     },
-    {
-      id: '4',
-      name: 'Twitter',
-      links: 'email@email.com',
-      p: 'sasaa',
-      src: linkedin,
-    },
+  ]
+
+  //footer 
+  export const footerLinks = [
+    {src: github, alt: 'github-logo', links: 'https://www.linkedin.com/in/bibekgurung9/', },
+    {src: linkedin, alt: 'linkedin-logo', links: 'https://www.linkedin.com/in/bibekgurung9/',},
+    {src: github, alt: 'twitter-logo', links: 'https://www.linkedin.com/in/bibekgurung9/',},
   ]
