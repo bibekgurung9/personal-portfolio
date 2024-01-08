@@ -9,7 +9,7 @@ export default function Example() {
   }
 
   return (
-    <div className="justify-center bg-white py-4 pt-16 sm:pt-16 sm:py-4 px-8">
+    <div className="justify-center bg-slate-200 py-4 pt-16 sm:pt-8 sm:py-4 px-8">
       <div className='flex flex-row justify-between'>
         <div id='col-1'>  
           <a href="#" className='font-bold text-2xl'>Bibek Gurung</a>
@@ -28,9 +28,11 @@ export default function Example() {
           {navigation.map((nav, index) => {
               return (
                 <li key={index} className="flex p-1 justify-between mt-1 hover:bg-purple-200 hover:rounded">
-                  <a className="flex gap-2" href={nav.href} target='blank'>
-                      <p className="truncate">{nav.name}</p>
+                  <a className="flex gap-2" href={nav.href} target='blank' download={nav.download}>
+                      <p className="">{nav.name}</p>
+
                   </a>
+
                 </li>
               )
             })}
