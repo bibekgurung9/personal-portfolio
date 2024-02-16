@@ -17,7 +17,7 @@ Welcome to my portfolio repository! This project is a showcase of my work and pr
 - [License](#license)
 
 ## Demo
-Check out the live demo of my portfolio [here](https://your-portfolio-url.com).
+Check out the live demo of my portfolio [here](https://your-portfolio-url.com). //link to be updated later
 
 ## Features
 - Clean and responsive design
@@ -28,7 +28,7 @@ Check out the live demo of my portfolio [here](https://your-portfolio-url.com).
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/your-portfolio.git
+   git clone https://github.com/bibekgurung9/personal-portfolio
 Navigate to the project directory:
 bash
 Copy code
