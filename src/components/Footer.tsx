@@ -28,11 +28,9 @@ export default function Example() {
           {navigation.map((nav, index) => {
               return (
                 <li key={index} className="flex p-1 justify-between mt-1 hover:bg-purple-200 hover:rounded">
-                  <a className="flex gap-2" href={nav.href} target='blank' download={nav.download}>
+                  <a className="flex gap-2" href={nav.href} target='blank'>
                       <p className="">{nav.name}</p>
-
                   </a>
-
                 </li>
               )
             })}
