@@ -1,9 +1,8 @@
 import React from 'react'
 import Image from 'next/image';
-import github from '@/assets/github.svg';
-import linkedin from '@/assets/linkedin.svg'
 import { techStack } from '@/constants'
 import profile from '@/assets/profile.jpg'
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa6';
 
 const HeroSection = () => {
   return (
@@ -17,11 +16,12 @@ const HeroSection = () => {
         <Image src={profile} alt={''} width={250} className='border rounded'/>
         </div>
         <p className="mt-6 text-lg leading-8 text-gray-600">
-          Hi! I'm Bibek Gurung. A Passionate Front-End React Developer Based In Kathmandu, Nepal. 
+          Hi! I&apos;m Bibek Gurung. A Passionate Front-End React Developer Based In Kathmandu, Nepal. 
         </p>
         <div className="mt-10 flex items-center justify-center gap-x-6">
-          <a href="#"><Image src={github} alt={''} width={30} /></a>
-          <a href="#"><Image src={linkedin} alt={''} width={30}  /></a>
+          <a href="https://github.com/bibekgurung9" target='blank' className='text-4xl hover:shadow-xl text-black hover:text-black/70'><FaGithub /></a>
+          <a href="https://www.linkedin.com/in/bibekgurung9/" target='blank' className='text-4xl hover:shadow-xl text-black hover:text-black/70'><FaLinkedin /></a>
+          <a href="https://twitter.com/_BibekGurung" target='blank' className='text-4xl hover:shadow-xl text-black hover:text-black/70'><FaTwitter /></a>
         </div>
 
         <div className="mt-10 flex items-center justify-center gap-x-6">

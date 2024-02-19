@@ -20,7 +20,10 @@ export default function Example() {
                                 <a href="https://glittering-parfait-71946c.netlify.app/" className="hover:underline" target='blank'>Realtime Chatroom</a>
                             </li>
                             <li className="mb-4">
-                                <a href="https://fitness-exercise-app-eight.vercel.app/" className="hover:underline" target='blank'>PHP Ecommerce</a>
+                                <a href="https://fitness-exercise-app-eight.vercel.app/" className="hover:underline" target='blank'>Fitness Portal</a>
+                            </li>
+                            <li className="mb-4">
+                                <a href="https://github.com/bibekgurung9/php-ecommerce-app" className="hover:underline" target='blank'>PHP Ecommerce</a>
                             </li>
                         </ul>
                     </div>
@@ -29,13 +32,13 @@ export default function Example() {
                         <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Contact me</h2>
                         <ul className="text-gray-500 font-medium">
                             <li className="mb-4">
-                                <a href="https://github.com/bibekgurung9" className="hover:underline ">Github</a>
+                                <a href="https://github.com/bibekgurung9" className="hover:underline " target='blank'>Github</a>
                             </li>
                             <li className="mb-4">
-                                <a href="https://www.linkedin.com/in/bibekgurung9/" className="hover:underline">Linkedin</a>
+                                <a href="https://www.linkedin.com/in/bibekgurung9/" className="hover:underline" target='blank'>Linkedin</a>
                             </li>
                             <li className="mb-4">
-                                <a href="https://twitter.com/_BibekGurung" className="hover:underline">Twitter</a>
+                                <a href="https://twitter.com/_BibekGurung" className="hover:underline" target='blank'>Twitter</a>
                             </li>
                         </ul>
                     </div>
@@ -55,9 +58,9 @@ export default function Example() {
                 <span className="text-sm text-gray-500 sm:text-center">© 2024 <a href="https://flowbite.com/" className="hover:underline">Bibek Gurung</a> . All Rights Reserved.
                 </span>
                 <div className="flex mt-4 sm:justify-center sm:mt-0 gap-x-4">
-                  <a href="https://github.com/bibekgurung9" target='blank' className='text-black hover:text-black/70'><FaGithub/></a>
-                  <a href="https://www.linkedin.com/in/bibekgurung9/" target='blank' className='text-black hover:text-black/70'><FaLinkedin/></a>
-                  <a href="https://twitter.com/_BibekGurung" target='blank' className='text-black hover:text-black/70'><FaTwitter /></a>
+                  <a href="https://github.com/bibekgurung9" target='blank' className='text-black hover:text-black/70 text-2xl'><FaGithub/></a>
+                  <a href="https://www.linkedin.com/in/bibekgurung9/" target='blank' className='text-black hover:text-black/70 text-2xl'><FaLinkedin/></a>
+                  <a href="https://twitter.com/_BibekGurung" target='blank' className='text-black hover:text-black/70 text-2xl'><FaTwitter /></a>
                 </div>
             </div>
           </div>

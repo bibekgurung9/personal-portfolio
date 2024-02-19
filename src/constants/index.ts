@@ -2,7 +2,6 @@
 export const navigation = [
   { name: 'Portfolio', href: '#portfolio' },
   { name: 'About Me', href: '#about-me' },
-  { name: 'Contact Me', href: '#contact-me' },
   { name: 'CV', href: 'https://docs.google.com/document/d/1uXvjcpXFdvfI7gj74FqEjNEHSslshgeuLofac7Bmr2c/edit?usp=sharing' },
 ]
 
@@ -75,32 +74,4 @@ export const posts = [
         description:
           'This project is a full-stack e-commerce website project built with HTML, CSS, JavaScript, PHP, and MySQL. It provides a platform for users to browse, purchase, and manage projects with admin dashboard to manage users, products, orders, payment & more!',   
       },
-  ]
-
-  //contact page
-  import github from '@/assets/github.svg'
-  import linkedin from '@/assets/linkedin1.svg'
-
-  export const socialLinks = [
-    {
-      id: '2',
-      name: 'Linkedin',
-      links: 'https://www.linkedin.com/in/bibekgurung9/',
-      p: 'https://www.linkedin.com/in/bibekgurung9/',
-      src: linkedin,
-    },
-    {
-      id: '3',
-      name: 'Github',
-      links: 'https://www.linkedin.com/in/bibekgurung9/',
-      p: 'https://www.linkedin.com/in/bibekgurung9/',     
-      src: github,
-    },
-  ]
-
-  //footer 
-  export const footerLinks = [
-    {src: github, alt: 'github-logo', links: 'https://www.linkedin.com/in/bibekgurung9/', },
-    {src: linkedin, alt: 'linkedin-logo', links: 'https://www.linkedin.com/in/bibekgurung9/',},
-    {src: github, alt: 'twitter-logo', links: 'https://www.linkedin.com/in/bibekgurung9/',},
   ]

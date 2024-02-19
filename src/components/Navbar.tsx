@@ -26,7 +26,7 @@ const NavBar = () => {
       </div>
       <div className="hidden lg:flex lg:gap-x-12 justify-center items-center">
         {navigation.map((item) => (
-          <a key={item.name} href={item.href} className="text-2xl font-semibold leading-6 text-gray-900 p-1" target='blank'>
+          <a key={item.name} href={item.href} className="text-2xl font-semibold leading-6 text-gray-900 p-1">
             {item.name}
           </a>
         ))}
