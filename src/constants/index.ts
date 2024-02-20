@@ -22,11 +22,11 @@ export const techStack = [
     {src: nextjs, alt: 'NEXTJS'},
 ]
 
-import project1 from '@/assets/projects/project 1.png'
-import project2 from '@/assets/projects/project 2.png'
-import project3 from '@/assets/projects/project 3.png'
-import project4 from '@/assets/projects/project 4.png'
-import noImage from '@/assets/projects/no image.jpg'
+import project2 from '@/assets/project2.png'
+import project3 from '@/assets/project3.png'
+import project4 from '@/assets/project4.png'
+import project5 from '@/assets/project5.png'
+import noImage from '@/assets/no image.jpg'
 
 //portfolio section
 export const posts = [
@@ -73,5 +73,16 @@ export const posts = [
         status: 'Completed',
         description:
           'This project is a full-stack e-commerce website project built with HTML, CSS, JavaScript, PHP, and MySQL. It provides a platform for users to browse, purchase, and manage projects with admin dashboard to manage users, products, orders, payment & more!',   
+      },
+      {
+        id: 5,
+        title: `Bibek's Portfolio Website`,
+        src: project5,
+        href: 'https://65d4792a9e9f6baf2b50047e--iambibekgurung.netlify.app/',
+        github: 'https://github.com/bibekgurung9/personal-portfolio',
+        name: 'Portfolio Website',
+        status: 'Completed',
+        description:
+          'This portfolio website was built with NextJs, TailwindCSS and Typescript.',   
       },
   ]

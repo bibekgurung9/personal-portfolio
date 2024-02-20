@@ -13,7 +13,7 @@ const HeroSection = () => {
         <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
           Front End React Developer
         </h1>
-        <Image src={profile} alt={''} width={250} className='border rounded'/>
+        <Image src={profile} alt={''} width={250} className='border rounded' loading='lazy' height={250}/>
         </div>
         <p className="mt-6 text-lg leading-8 text-gray-600">
           Hi! I&apos;m Bibek Gurung. A Passionate Front-End React Developer Based In Kathmandu, Nepal. 
@@ -29,7 +29,7 @@ const HeroSection = () => {
           <div className='flex gap-x-5'>
             {techStack.map((image, index) => (
               <div key={index}>
-                <Image src={image.src} alt={image.alt} width={40} height={40} />
+                <Image src={image.src} alt={image.alt} width={40} height={40} loading='lazy'  />
               </div>
             ))}
           </div>

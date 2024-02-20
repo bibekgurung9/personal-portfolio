@@ -15,8 +15,8 @@ const Portfolio = () => {
         <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none md:grid-cols-2 lg:grid-cols-3">
           {posts.map((post) => (
             <article key={post.id} className="flex max-w-xl flex-col items-center justify-center ">
-              <div className=''>
-                <Image alt={''} src={post.src} width={300} height={300} loading='lazy' />
+              <div className='h-auto w-auto'>
+                <Image alt={'Project Picture'} src={post.src} width={300} height={300} loading='lazy' />
               </div>
               <div className="group relative cursor-default">
                 <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600 cursor-default">
