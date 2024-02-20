@@ -1,8 +1,8 @@
 //navigation
 export const navigation = [
-  { name: 'Portfolio', href: '#portfolio' },
-  { name: 'About Me', href: '#about-me' },
-  { name: 'CV', href: 'https://docs.google.com/document/d/1uXvjcpXFdvfI7gj74FqEjNEHSslshgeuLofac7Bmr2c/edit?usp=sharing' },
+  { name: 'Portfolio', href: '#portfolio', id: '1' },
+  { name: 'About Me', href: '#about-me', id: '2' },
+  { name: 'CV', href: 'https://docs.google.com/document/d/1uXvjcpXFdvfI7gj74FqEjNEHSslshgeuLofac7Bmr2c/edit?usp=sharing', id: '3' },
 ]
 
 //images for tech stack

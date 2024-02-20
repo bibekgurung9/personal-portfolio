@@ -29,7 +29,7 @@ const HeroSection = () => {
           <div className='flex gap-x-5'>
             {techStack.map((image, index) => (
               <div key={index}>
-                <Image src={image.src} alt={image.alt} width={40} />
+                <Image src={image.src} alt={image.alt} width={40} height={40} />
               </div>
             ))}
           </div>

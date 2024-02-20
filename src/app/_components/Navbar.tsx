@@ -26,7 +26,7 @@ const NavBar = () => {
       </div>
       <div className="hidden lg:flex lg:gap-x-12 justify-center items-center">
         {navigation.map((item) => (
-          <a key={item.name} href={item.href} className="text-2xl font-semibold leading-6 text-gray-900 p-1">
+          <a key={item.id} href={item.href} className="text-2xl font-semibold leading-6 text-gray-900 p-1">
             {item.name}
           </a>
         ))}
@@ -53,7 +53,7 @@ const NavBar = () => {
             <div className="space-y-2 py-6">
               {navigation.map((item) => (
                 <a
-                  key={item.name}
+                  key={item.id}
                   href={item.href}
                   className="text-xl font-semibold leading-6 text-gray-900 p-1">
                   <span className='flex items-center'>{item.name}</span> 
