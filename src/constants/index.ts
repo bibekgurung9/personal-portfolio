@@ -2,7 +2,6 @@
 export const navigation = [
   { name: 'Portfolio', href: '#portfolio', id: '1' },
   { name: 'About Me', href: '#about-me', id: '2' },
-  { name: 'CV', href: 'https://docs.google.com/document/d/1uXvjcpXFdvfI7gj74FqEjNEHSslshgeuLofac7Bmr2c/edit?usp=sharing', id: '3' },
 ]
 
 //images for tech stack
@@ -12,6 +11,10 @@ import javascript from '@/assets/stack/javascript.svg'
 import react from '@/assets/stack/react.svg'
 import tailwind from '@/assets/stack/tailwind.svg'
 import nextjs from '@/assets/stack/nextjs.svg'
+import bootstrap from '@/assets/stack/bootstrap.svg'
+import mongodb from '@/assets/stack/mongodb.svg'
+import nodejs from '@/assets/stack/nodejs.svg'
+import typescript from '@/assets/stack/typescript.svg'
 
 export const techStack = [
     {src: html, alt: 'HTML'},
@@ -19,6 +22,10 @@ export const techStack = [
     {src: javascript, alt: 'JAVSCRIPT'},
     {src: react, alt: 'REACT'},
     {src: tailwind, alt: 'TAILWIND'},
+    {src: bootstrap, alt: 'bootstrap'},
+    {src: mongodb, alt: 'mongodb'},
+    {src: nodejs, alt: 'nodejs'},
+    {src: typescript, alt: 'typescript'},
     {src: nextjs, alt: 'NEXTJS'},
 ]
 
@@ -26,6 +33,7 @@ import project2 from '@/assets/project2.png'
 import project3 from '@/assets/project3.png'
 import project4 from '@/assets/project4.png'
 import project5 from '@/assets/project5.png'
+import project1 from '@/assets/project1.png'
 import noImage from '@/assets/no image.jpg'
 
 //portfolio section
@@ -33,7 +41,7 @@ export const posts = [
     {
       id: 1,
       title: 'Freelancing Website With NextJs 14',
-      src: noImage,
+      src: project1,
       href: 'https://github.com/bibekgurung9/nextjs-freelance-website',
       github: 'https://github.com/bibekgurung9/nextjs-freelance-website',
       name: 'NextJS Freelance',
@@ -48,7 +56,7 @@ export const posts = [
       href: 'https://glittering-parfait-71946c.netlify.app/',
       github: 'https://github.com/bibekgurung9/php-ecommerce-app',
       name: 'Realtime ChatRoom App',
-      status: 'Ongoing',
+      status: 'Completed',
       description:
         'This project is a real-time chatroom application built using React, Vite, and Appwrite. Users can seamlessly sign up, log in, and exchange messages in a chatroom in real-time. The integration with Appwrite provides a secure and scalable backend for user management and message storage, while Vite ensures a fast and efficient development environment.',   
     },
@@ -78,7 +86,7 @@ export const posts = [
         id: 5,
         title: `Bibek's Portfolio Website`,
         src: project5,
-        href: 'https://65d4792a9e9f6baf2b50047e--iambibekgurung.netlify.app/',
+        href: 'https://iambibekgurung.netlify.app/',
         github: 'https://github.com/bibekgurung9/personal-portfolio',
         name: 'Portfolio Website',
         status: 'Completed',
