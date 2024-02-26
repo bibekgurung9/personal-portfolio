@@ -34,20 +34,18 @@ import project3 from '@/assets/project3.png'
 import project4 from '@/assets/project4.png'
 import project5 from '@/assets/project5.png'
 import project1 from '@/assets/project1.png'
-import noImage from '@/assets/no image.jpg'
 
 //portfolio section
-export const posts = [
+export const projects = [
     {
       id: 1,
       title: 'Freelancing Website With NextJs 14',
       src: project1,
       href: 'https://github.com/bibekgurung9/nextjs-freelance-website',
       github: 'https://github.com/bibekgurung9/nextjs-freelance-website',
-      name: 'NextJS Freelance',
-      status: 'Ongoing',
-      description:
-        'This project is a freelance application built with Nextjs14, designed to provide a platform for freelancers to showcase their skills and services. Clients can explore and hire freelancers for various projects.',   
+      techStack: "Next.js14, TailwindCSS, Prisma, MongoDB, TypeScript & ShadcnUI",
+      // description:
+      //   'This project is a freelance application built with Nextjs14, designed to provide a platform for freelancers to showcase their skills and services. Clients can explore and hire freelancers for various projects.',   
     },
     {
       id: 2,
@@ -55,10 +53,9 @@ export const posts = [
       src: project2,
       href: 'https://glittering-parfait-71946c.netlify.app/',
       github: 'https://github.com/bibekgurung9/php-ecommerce-app',
-      name: 'Realtime ChatRoom App',
-      status: 'Completed',
-      description:
-        'This project is a real-time chatroom application built using React, Vite, and Appwrite. Users can seamlessly sign up, log in, and exchange messages in a chatroom in real-time. The integration with Appwrite provides a secure and scalable backend for user management and message storage, while Vite ensures a fast and efficient development environment.',   
+      techStack: "React, TailwindCSS & Appwrite",
+      // description:
+      //   'This project is a real-time chatroom application built using React, Vite, and Appwrite. Users can seamlessly sign up, log in, and exchange messages in a chatroom in real-time. The integration with Appwrite provides a secure and scalable backend for user management and message storage, while Vite ensures a fast and efficient development environment.',   
     },
     {
       id: 3,
@@ -66,10 +63,9 @@ export const posts = [
       src: project3,
       href: 'https://fitness-exercise-app-eight.vercel.app/',
       github: 'https://github.com/bibekgurung9/fitness-exercise-app',
-      name: 'Fitness Wesbite',
-      status: 'Completed',
-      description:
-        'This project is a front-end fitness app built with Next.js 14, TypeScript, Tailwind CSS, and ShadcnUI. This application leverages the power of Rapid API to provide you with comprehensive fitness data, helping you achieve your health and wellness goals.',   
+      techStack: "Next.js14, TailwindCSS, RapidAPI & ShadcnUI",
+      // description:
+      //   'This project is a front-end fitness app built with Next.js 14, TypeScript, Tailwind CSS, and ShadcnUI. This application leverages the power of Rapid API to provide you with comprehensive fitness data, helping you achieve your health and wellness goals.',   
     },
     {
         id: 4,
@@ -77,10 +73,9 @@ export const posts = [
         src: project4,
         href: 'https://github.com/bibekgurung9/php-ecommerce-app',
         github: 'https://github.com/bibekgurung9/php-ecommerce-app',
-        name: 'PHP Ecommerce',
-        status: 'Completed',
-        description:
-          'This project is a full-stack e-commerce website project built with HTML, CSS, JavaScript, PHP, and MySQL. It provides a platform for users to browse, purchase, and manage projects with admin dashboard to manage users, products, orders, payment & more!',   
+        techStack: "HTML, CSS, JavaScript, PHP & MySQL",
+        // description:
+        //   'This project is a full-stack e-commerce website project built with HTML, CSS, JavaScript, PHP, and MySQL. It provides a platform for users to browse, purchase, and manage projects with admin dashboard to manage users, products, orders, payment & more!',   
       },
       {
         id: 5,
@@ -88,9 +83,8 @@ export const posts = [
         src: project5,
         href: 'https://iambibekgurung.netlify.app/',
         github: 'https://github.com/bibekgurung9/personal-portfolio',
-        name: 'Portfolio Website',
-        status: 'Completed',
-        description:
-          'This portfolio website was built with NextJs, TailwindCSS and Typescript.',   
+        techStack: "Next.js, TaiilwindCSS & TailwindUI",
+        // description:
+        //   'This portfolio website was built with NextJs, TailwindCSS and Typescript.',   
       },
   ]
