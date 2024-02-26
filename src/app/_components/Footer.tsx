@@ -9,11 +9,11 @@ export default function Example() {
   return (
       <footer className="bg-white border-t-2 border-slate-200">
           <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-              <div className="md:flex md:justify-between">
+            <div className="md:flex md:justify-between">
                 <div className="mb-6 md:mb-0">
                   <span className="self-center text-2xl font-semibold whitespace-nowrap">Bibek Gurung</span>
                 </div>
-                <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-2">
                     <div>
                         <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Projects</h2>
                         <ul className="text-gray-500 font-medium">
@@ -31,7 +31,6 @@ export default function Example() {
                             </li>
                         </ul>
                     </div>
-
                     <div>
                         <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Contact me</h2>
                         <ul className="text-gray-500 font-medium">
@@ -49,7 +48,6 @@ export default function Example() {
                             </li>
                         </ul>
                     </div>
-
                 </div>
             </div>
             <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-300 lg:my-8" />

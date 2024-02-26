@@ -25,10 +25,10 @@ const HeroSection = () => {
         <br />You contact me throught my socials or email address by clicking the icons below. 
         </p>
         <div className="mt-10 flex items-center justify-center gap-x-6">
-          <a href="https://github.com/bibekgurung9" target='blank' className='text-4xl hover:shadow-xl text-black hover:text-black/70'><FaGithub /></a>
-          <a href="https://www.linkedin.com/in/bibekgurung9/" target='blank' className='text-4xl hover:shadow-xl text-black hover:text-black/70'><FaLinkedin /></a>
-          <a href="https://twitter.com/_BibekGurung" target='blank' className='text-4xl hover:shadow-xl text-black hover:text-black/70'><FaTwitter /></a>
-          <button className='text-4xl hover:shadow-xl text-black hover:text-black/70' onClick={openEmail}><MdEmail /></button>
+          <a href="https://github.com/bibekgurung9" target='blank' className='text-4xl hover:shadow-xl text-black hover:text-black/80 hover:scale-125'><FaGithub /></a>
+          <a href="https://www.linkedin.com/in/bibekgurung9/" target='blank' className='text-4xl hover:shadow-xl text-black hover:text-black/80 hover:scale-125'><FaLinkedin /></a>
+          <a href="https://twitter.com/_BibekGurung" target='blank' className='text-4xl hover:shadow-xl text-black hover:text-black/80 hover:scale-125'><FaTwitter /></a>
+          <button className='text-4xl hover:shadow-xl text-black hover:text-black/80 hover:scale-125' onClick={openEmail}><MdEmail /></button>
         </div>
 
         <div className="mt-10 flex items-center justify-center gap-x-6">
@@ -36,7 +36,7 @@ const HeroSection = () => {
           <div className='gap-x-5 gap-y-5 grid grid-cols-6 md:grid-cols-10'>
             {techStack.map((image, index) => (
               <div key={index}>
-                <Image src={image.src} alt={image.alt} width={50} height={50} loading='lazy'  />
+                <Image src={image.src} alt={image.alt} width={50} height={50} loading='lazy'/>
               </div>
             ))}
           </div>
