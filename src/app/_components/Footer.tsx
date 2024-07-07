@@ -19,7 +19,7 @@ export default function Example() {
                             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Projects</h2>
                             <ul className="text-gray-500 font-medium">
                                 {projects.slice(0, 4).map((project, index) => (
-                                    <li className="mb-4">
+                                    <li className="mb-4" key={index}>
                                         <a href={project.href} className="hover:underline " target='blank'>{project.title}</a>
                                     </li>
                                 ))}
