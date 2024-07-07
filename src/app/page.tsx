@@ -6,7 +6,6 @@ import NavBar from '@/app/_components/Navbar';
 import Portfolio from '@/app/_components/Portfolio';
 
 export default function HomePage() {
-
   return (
     <div className="bg-white">
       <NavBar />

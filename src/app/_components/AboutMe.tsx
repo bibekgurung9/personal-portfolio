@@ -10,8 +10,7 @@ export default function Example() {
             <div className="lg:max-w-lg">
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center">About Me</h1>
               <p className="mt-6 text-xl leading-8 text-gray-700">
-              Greetings! 👋 I&apos;m Bibek, a results-driven software developer with a knack for turning innovative ideas into high-quality, scalable solutions. My expertise spans a diverse technology stack, making me a versatile and resourceful professional in the ever-evolving world of software development. <br /><br />
-              Let&apos;s connect! Feel free to reach out for discussions on software development, industry trends, or potential collaborations.
+                Greetings! 👋 I&apos;m Bibek,  a dedicated and results-driven full stack developer with a strong foundation in the MERN stack. I specialize in crafting high-quality, scalable web applications and have a proven track record of delivering innovative solutions. My diverse skill set and experience make me a versatile professional ready to tackle any challenge in the dynamic field of software development.
               </p>
             </div>
           </div>
