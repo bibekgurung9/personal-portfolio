@@ -1,24 +1,35 @@
-import React from 'react'
-import { ProjectCard } from './ProjectCard'
-import { projects } from '../../../constants'
+import React from 'react';
+import { projects } from '@/constants';
+import { ProjectCard } from '@/app/_components/ProjectCard';
 
-const Portfolio = () => {
+export default function Portfolio(){
   return (
-    <div className="bg-white pb-16" id='portfolio'>
+    <div className="relative isolate overflow-hidden py-16 md:py-24" id="portfolio">
       <div className="mx-auto max-w-7xl px-6">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center">Portfolio</h2>
-        <p className="mt-2 text-lg leading-8 text-gray-600 text-center">
-          Check My Projects & Works
-        </p>
+        <div className="text-center">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Portfolio</h2>
+        </div>
 
-        <div className="mx-auto grid max-w-2xl xs:grid-cols-1 gap-x-8 gap-y-16 pt-10 lg:mx-0 lg:max-w-none  sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto flex flex-col gap-y-12 pt-10 lg:max-w-none">
           {projects.map((project, index) => (
-            <ProjectCard key={index} id={index} title={project.title} techStack={project.techStack} imgUrl={project.src} href={project.href} github={project.github} />
+            <div
+              key={index}
+              className={`flex flex-col lg:flex-row ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''
+                } items-center lg:gap-x-8`}
+            >
+              <ProjectCard
+                id={index}
+                title={project.title}
+                techStack={project.techStack}
+                imgUrl={project.src}
+                liveUrl={project.live}
+                githubUrl={project.github}
+                features={project.features}
+              />
+            </div>
           ))}
         </div>
       </div>
     </div>
-  )
-}
-
-export default Portfolio
+  );
+};

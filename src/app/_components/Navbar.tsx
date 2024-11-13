@@ -1,75 +1,64 @@
+"use client";
 import React, { useState } from 'react';
-import { Dialog } from '@headlessui/react';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import { navigation } from '../../../constants';
+import { ArrowUpRightIcon, XMarkIcon, Bars2Icon } from '@heroicons/react/16/solid';
+import { navigation } from '@/constants';
 
-const NavBar = () => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+export default function NavBar() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div className='bg-white'>
-      <header className="fixed inset-x-0 top-0 z-50 bg-white">
-        <nav className="flex items-center justify-between p-4 lg:px-4 border-b-2 border-slate-200" aria-label="Global">
-          <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
-              <h1 className='font-bold text-2xl'>Bibek Gurung</h1>
-            </a>
-          </div>
-          <div className="flex lg:hidden">
-            <button
-              type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-              onClick={() => setMobileMenuOpen(true)}
-            >
-              <span className="sr-only">Open main menu</span>
-              <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-            </button>
-          </div>
-          <div className="hidden lg:flex lg:gap-x-12 justify-center items-center">
-            {navigation.map((item) => (
-              <a key={item.id} href={item.href} className="text-2xl font-semibold leading-6 text-gray-900 p-1">
-                {item.name}
-              </a>
-            ))}
-          </div>
-        </nav>
-        <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-          <div className="fixed inset-0 z-50" />
-          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-            <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5" onClick={() => setMobileMenuOpen(false)}>
-                <h1 className='font-bold text-1xl'>Bibek Gurung</h1>
-              </a>
-              <button
-                type="button"
-                className="-m-2.5 rounded-md p-2.5 text-gray-700"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                <span className="sr-only">Close menu</span>
-                <XMarkIcon className="h-6 w-6" aria-hidden="true" />
-              </button>
-            </div>
-            <div className="mt-6 flow-root">
-              <div className="-my-6 divide-y divide-gray-500/10">
-                <div className="space-y-2 py-6">
-                  {navigation.map((item) => (
-                    <a
-                      key={item.id}
-                      href={item.href}
-                      className="text-xl font-semibold leading-6 text-gray-900 p-1"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      <span className='flex items-center'>{item.name}</span>
-                    </a>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </Dialog.Panel>
-        </Dialog>
-      </header>
-    </div>
-  );
-};
+    <header className="inset-x-0 top-0 z-50 text-white">
+      <nav className="flex items-center justify-between p-4 lg:px-6" aria-label="Global">
+        <div className="flex">
+          <a href="#" className="-m-1.5 p-1.5" aria-label="Navigate to homepage">
+            <h1 className="text-xl font-semibold">Bibek Gurung</h1>
+          </a>
+        </div>
 
-export default NavBar;
+        <div className="hidden lg:flex items-center gap-x-8">
+          {navigation.map((item) => (
+            <a
+              key={item.id}
+              href={item.href}
+              target='_blank'
+              className="flex items-center gap-x-2 text-lg hover:text-gray-300 transition-colors"
+            >
+              {item.name} <ArrowUpRightIcon className="h-4 w-4" aria-hidden="true" />
+            </a>
+          ))}
+        </div>
+
+        <div className="lg:hidden">
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle mobile menu"
+            className="p-2 rounded-md text-gray-400 hover:text-white"
+          >
+            {isMobileMenuOpen ?  <XMarkIcon className="h-6 w-6" /> : <Bars2Icon className="h-6 w-6" />}
+          </button>
+        </div>
+      </nav>
+
+      {isMobileMenuOpen && (
+        <div className="lg:hidden absolute top-0 left-0 right-0 bg-black bg-opacity-75 p-4 space-y-9 z-40">
+          <button 
+            onClick={() => setIsMobileMenuOpen(false)} 
+            className="absolute top-4 right-1 text-white p-2 rounded-md"
+          >
+            <XMarkIcon className="h-6 w-6" />
+          </button>
+
+          {navigation.map((item) => (
+            <a
+              key={item.id}
+              href={item.href}
+              className="text-lg flex items-center justify-end gap-x-1 hover:text-gray-300"
+            >
+              {item.name} <ArrowUpRightIcon className="h-4 w-4" />
+            </a>
+          ))}
+        </div>
+      )}
+    </header>
+  );
+}

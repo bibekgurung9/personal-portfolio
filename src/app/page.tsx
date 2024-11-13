@@ -1,18 +1,16 @@
-'use client';
-import AboutMe from '@/app/_components/AboutMe';
-import Footer from '@/app/_components/Footer';
-import HeroSection from '@/app/_components/HeroSection';
-import NavBar from '@/app/_components/Navbar';
-import Portfolio from '@/app/_components/Portfolio';
+"use client";
+import AboutMe from "@/app/_components/AboutMe";
+import HeroSection from "@/app/_components/HeroSection";
+import Portfolio from "@/app/_components/Portfolio";
+import Tech from "@/app/_components/Tech";
 
 export default function HomePage() {
   return (
-    <div className="bg-white">
-      <NavBar />
+    <main>
       <HeroSection />
       <AboutMe />
+      <Tech />
       <Portfolio />
-      <Footer />
-    </div>
+    </main>
   )
 }
